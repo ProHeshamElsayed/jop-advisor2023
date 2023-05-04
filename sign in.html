@@ -5,138 +5,57 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>تسجيل دخول</title>
       <link rel="shortcut icon" type="image/x-icon" href="images/توثيق.png">
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/all.min.css">
       <!-- font awesome cdn link  -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      <style>
-             html{
-        font-size: 62.5%;
-        overflow-x: hidden;
-       }
-         body {
-         background:url(images/sign/5.jpg) no-repeat;
-         background-size: cover;	
-         }
-         .header h1{
-         font-size: 50px;
-         font-weight: bold;
-         text-align: center;
-         color: #6d1503;
-         padding-top: 10px;
-         }
-         .container {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         min-height: 100vh;
-         }
-         .container .headtitle{
-         font-size: 25px;
-         font-weight: bold;
-         text-align: center;
-         padding-top: 370px;
-         }
-         .screen {		
-         position: relative;	
-         height: 930px;
-         width: 500px;	
-         box-shadow: 1px 1px 24px #333335;
-         }
-         .screen__content {
-         z-index: 1;
-         position: relative;	
-         height: 100%;
-         }
-         .screen__background {		
-         position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         z-index: 0;
-         background: url(images/sign/باك\ جرواند2.png);
-         }
-         .login {
-         width: 500px;
-         padding: 50px;
-         padding-top: 0px;
-         }
-         .login__input {
-         box-shadow:1px 2px 10px black;
-         border: none;
-         background: white;
-         padding: 15px;
-         margin: 10px;
-         font-weight: bold;
-         width: 70%;
-         font-size: 20px;
-         color: black;
-         }
-         .login__submit {
-         background: #16014e;
-         font-size: 40px;
-         margin-top: 10px;
-         padding: 15px;
-         border-radius: 70px;
-         font-weight: bold;
-         align-items: center;
-         color: #ffffff;
-         box-shadow: 1px 1px 5px #868383;
-         cursor: pointer;
-         width: 80%;
-         }
-         .forget p{
-         font-size: 30px;
-         font-weight: bold;
-         position: absolute;
-         padding-left: 100px;
-         padding-top: 35px;
-         text-decoration: none;
-         }
-         .social-icons {
-         display: flex;
-         padding-left: 100px;
-         }
-         .social-icons a{
-         padding: 0px 30px;
-         }
-      </style>
+      <link rel="stylesheet" href="fontawesome-web/css/all.min.css">
    </head>
    <body>
-      <div class="header">
-         <h1>المستشـــار الوظيفـى يــرحــب بــكــم</h1>
-      </div>
-      <div class="container">
-         <div class="screen">
-            <div class="screen__content">
-               <br>
-               <div class="headtitle">
-                  <h1>تسجــيل دخـــــول</h1>
-               </div>
-               <form class="login">
-                  <div class="login__field">
-                     <input type="text" class="login__input" placeholder="Username or Email">
-                  </div>
-                  <div class="login__field">
-                     <input type="password" class="login__input" placeholder="Password">
-                  </div>
-                  <button class="login__submit">
-                  <span class="button__text">تسجيل دخول</span> 
-                  </button>				
-               </form>
-               <div class="forget">
-                  <p>?ليس لديك حساب قم بالتسجيل</a>
-               </div>
-               <div class="social-login">
-                  <div class="social-icons">
-                     <a href=""><img src="images/facebook.png" width="50px" height="50px"></a>
-                     <a href=""><img src="images/انستجرام.png" width="50px" height="50px"></a>
-                     <a href=""><img src="images/جوجل.png" width="50px" height="50px"></a>
-                  </div>
-               </div>
-            </div>
-            <div class="screen__background">
-            </div>
+      <div class="icons-links">
+         <div class="i-link">
+            <a href="index.html">
+               <i class="fa-solid fa-house"></i>            
+            </a>
+            <a href="search.html">
+               <i class="fa-solid fa-magnifying-glass"></i>            
+            </a>
+            <a href="cv.html">
+               <i class="fa-solid fa-book"></i>            
+            </a>
+            <a href="About.html">
+               <i class="fa-solid fa-circle-info"></i>            
+            </a>
          </div>
       </div>
+   <div class="header-sign">
+         <h1>المستشـــار الوظيفـى يــرحــب بــكــم</h1>
+   <div class="container2">
+      <div class="user-name">
+         <h2>تسجــيل دخـــــول</h2>
+         <input class="user" type="text" placeholder="البريد الكتروني او الرقم المحمول" name="email">
+         <input class="pass" type="password" placeholder="كلمة السر" name="pass">
+      <div class="control">
+         <input type="checkbox" id="box">
+         <label for="box">ذكرني</label>
+         <a href="#"><p class="cont">نسيت كلمة السر؟</p></a>
       </div>
+         <a class="btn-sig" href="">تسجيل الدخول</a>
+         <a href="sign up.html">
+            <div class="forget">
+               <p>?ليس لديك حساب قم بالتسجيل
+            </p></div>
+         </a>
+      </div>
+      <div class="social-login">
+         <div class="social-icons">
+            <a href=""><img src="images/facebook.png" width="50px" height="50px"></a>
+            <a href=""><img src="images/انستجرام.png" width="50px" height="50px"></a>
+            <a href=""><img src="images/جوجل.png" width="50px" height="50px"></a>
+         </div>
+      </div>
+   </div>
+   </div>
    </body>
+</html>

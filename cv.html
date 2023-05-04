@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <head>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>cv</title>
          <link rel="shortcut icon" type="image/x-icon" href="images/توثيق.png">
          <!-- custom css file link  -->
-         <link rel="stylesheet" href="style.css">
-         <!-- responsive css file link  -->
-         <link rel="stylesheet" href="responsive.css">
+         <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/normalize.css">
+         <link rel="stylesheet" href="css/all.min.css">
          <!-- font awesome cdn link  -->
          <link rel="stylesheet" href="fontawesome-web/css/all.min.css">
-   </head>
    </head>
    <body>
       <!-- header section starts  -->
       <header>
          <div class="sign">
-            <a  href="sign in.html" class="btn">تسجيل دخول</a>
-            <a  href="sign up.html" class="btn">سجـل</a>
+          <a  href="sign up.html" class="btn">سجـل</a>
+          <a  href="sign in.html" class="btn">تسجيل دخول</a>
          </div>
           <nav class="navbar">
                 <a href="index.html">الرئيسية</a>
                 <a href="search.html">البحث عن وظيفة</a>
                 <a href="cv.html">السيرة الذاتية</a>
                 <a href="About.html">نبذة عنـا</a>
-                <a href="contact.html">الاتصال بنا والمساعدة</a>
           </nav>
-          <a href="#" class="logo"><img src="images/الشعار.png" width="220px" height="70px"></a>
-          <input type="checkbox" id="menu-bar">
-          <label for="menu-bar" class="fas fa-bars"></label>
-         </header>
+          <a href="index.html" class="logo"><img src="images/الشعار.png" width="220px" height="70px"></a>
+          <div class="links">
+            <span class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <ul>
+              <li><a href="index.html">الرئيسية</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="search.html">البحث عن وظيفة</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="cv.html">السيرة الذاتية</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="About.html">نبذة عنـا</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="contact.html">الاتصال بنا والمساعدة</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+               <li class="sign-login">
+                  <a  href="sign in.html" class="btn-men">تسجيل دخول</a>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a  href="sign up.html" class="btn-men">سجـل</a>
+                  <i class="fa-solid fa-angles-left"></i>
+               </li>
+            </ul>
+         </div>
+      </header>
       <!-- header -->
       <!-- home -->
       <section class="cv">
@@ -42,214 +62,179 @@
       <div class="header">
          <h1>أنشــئ السيــرة الذاتـيـة</h1>
       </div>
-
-      <!-- -------------------------------------------------------- -->
       <!-- البيانات الشخصيه -->
-      <div class="container">
+      <div class="container-cvv">
          <div class="dtt">
             <h1>البيانات الشخصية</h1>
             <form>
-               <div>
-               <label class="labb">الإســـــــــــم الأول</label>
-               <input type="text" placeholder="name" class="formin">
-               <label class="labb">الإســـــــــم الثانى</label>
-               <input type="text" placeholder="name" class="formin">
+               <div class="box-cv-1">
+                  <input type="text" placeholder="name" class="formin">
+                  <label class="labb">الإســـــــــم الثانى</label>
+                  <input type="text" placeholder="name" class="formin">
+                  <label class="labb">الإســـــــــــم الأول</label>
                </div>
-               <div>
-               <label class="labb">اســــــم المستخدم</label>
-               <input type="text" placeholder="اسم المستخدم" class="formin">
-               <label class="labb">رقم الجــــــــوال</label>
+               <div class="box-cv-1">
                <input type="text" class="formin">
+               <label class="labb">رقم الجــــــــوال</label>
+               <input type="password" placeholder="password" class="formin">
+               <label class="labb">كلمــة الســر</label>
                </div>
-               <div>
-                  <label class="labb">البريد الالكترونـى</label>
-                  <input type="email" placeholder="Enter email" class="formin">
-                  <label class="labb">كلمــة الســر</label>
-                  <input type="password" placeholder="password" class="formin">
-               </div>
-               <div>
+               <div class="box-cv-1">
+                  <input type="text" class="formin">
                   <label class="labb">العنــــــوان</label>
-                  <input type="text" class="formin">
-                  <label class="labb">عنـــوان آخـر</label>
-                  <input type="text" class="formin">
+                  <input type="email" placeholder="Enter email" class="formin">
+                  <label class="labb">البريد الالكترونـى</label>
                </div>
-               <div>
-                  <label class="labb">الـدولــــة</label>
+               <div class="box-cv-1">
                   <input type="text"  class="formin">
                   <label class="labb">الجنسيـــــة</label>
                   <input type="text"  class="formin">
+                  <label class="labb">الـدولــــة</label>
                </div>
-               <div>
-                  <label class="labb">تاريخ الميلاد</label>
+               <div class="box-cv-1">
                   <input type="datetime-local"  class="formin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <label class="labb">تاريخ الميلاد</label>
+                  <input type="radio" value="male" name="gender" class="formin">ذكر
+                  <input type="radio" value="male" name="gender" class="formin">أنثى
                   <label class="labb">الــنوع</label>
-                  <input type="radio" value="male" name="gender">ذكر
-                  <input type="radio" value="male" name="gender">أنثى
                </div>
             </form>
          </div>
       </div>
       <!-- -------------------------------------------------------- -->
       <!-- التعليم-->
-      <div class="container">
-         <div class="ed">
+      <div class="container-cvv">
+         <div class="dtt">
             <h1>التعليم</h1>
             <form>
-               <div>
-               <label class="labb">اسم الكلية او المعهد</label>
-               <input type="text" class="formin" >
-               </div>
-               <div>
+               <div class="box-cv-1">
+               <input type="text" class="formin">
                <label class="labb">المؤهل</label>
-               <input type="text" class="formin">
-               <label class="labb">التخصص</label>
-               <input type="text" class="formin">
+               <input type="text" class="formin" >
+               <label class="labb">اسم الكلية او المعهد</label>
                </div>
-               <div>
+               <div class="box-cv-1">
+                  <input type="text" class="formin">
+                  <label class="labb">التخصص</label>
+                  <input type="datetime-local"  class="formin">
                   <label class="labb">تاريخ البدء</label>
+               </div class="box-cv-1">
                   <input type="datetime-local"  class="formin">
-                  <label class="labb">تاريخ التخرج</label>
-                  <input type="datetime-local"  class="formin">
-               </div>
-               <div class="inputBox">
-                  <textarea required name="" placeholder="وصف التعليم" cols="30" rows="50"></textarea>
-               </div>
+                  <label class="lab">تاريخ التخرج</label>
             </form>
          </div>
       </div>
       <!-- -------------------------------------------------------- -->
       <!-- المهارات-->
-      <div class="container">
-         <div class="sk">
+      <div class="container-cvv">
+         <div class="dtt">
             <h1> المهارات والخبره الشخصية</h1>
             <form>
-               <div>
-               <label class="labb">مسمى الوظيفة</label>
+               <div class="box-cv-1">
                <input type="text" class="formin" >
-               <label class="labb">المجال الوظيفى</label>
+               <label class="labb">مسمى الوظيفة</label>
                <input type="text" class="formin">
+               <label class="labb">المجال الوظيفى</label>
                </div>
-               <div>
-                  <label class="labb">اسم الشركة</label>
+               <div class="box-cv-1">
                   <input type="text" class="formin" >
-                  <label class="labb">المدينة</label>
+                  <label class="labb">اسم الشركة</label>
                   <input type="text" class="formin">
+                  <label class="labb">المدينة</label>
                   </div>
-               <div>
+               <div class="box-cv-1">
+                  <input type="datetime-local"  class="formin">
                   <label class="labb">تاريخ البدء</label>
                   <input type="datetime-local"  class="formin">
                   <label class="labb">تاريخ التخرج</label>
-                  <input type="datetime-local"  class="formin">
-               </div>
-               <div class="inputBox">
-                  <textarea required name="" placeholder="وصف التعليم" cols="30" rows="50"></textarea>
                </div>
             </form>
          </div>
       </div>
       <!-- -------------------------------------------------------- -->
       <!--الشهادات-->
-      <div class="container">
-         <div class="cr">
+      <div class="container-cvv">
+         <div class="dtt">
             <h1>هل تمتلك اى شهادة مهنية</h1>
             <form>
-               <div>
-                  <label class="labb">اضافة</label>
-                  <input class="g" type="radio" value="male" name="gender">شهادة
-                  <input class="g" type="radio" value="female" name="gender">كورس تدريب
+               <div class="box-cv-1">
+                  <input type="text" class="formin" >
+                  <label class="labb">شهادة او تدريب</label>
+                  <input type="text" class="formin">
+                  <label class="labb">اسم المؤسسة</label>
                </div>
-               <div>
-               <label class="labb">شهادة او تدريب</label>
-               <input type="text" class="formin" >
-               <label class="labb">اسم المؤسسة</label>
-               <input type="text" class="formin">
-               </div>
-               <div>
-               <label class="labb">عدد سنوات الخبرة</label>
+               <div class="box-cv-1">
                <input type="number" class="formin">
-               <label class="labb">العنوان</label>
+               <label class="labb">عدد سنوات الخبرة</label>
                <input type="text" class="formin">
+               <label class="labb">العنوان</label>
                </div>
-               <div>
-
-                  <br>
+               <div class="box-cv-1">
+                  <input type="file" name="file" multiple style="padding:8px 5px;">
                   <label class="labb">ملف الشهادة</label>
-                  <input type="file" name="file" multiple style="padding:10px 50px;">
+                  <input class="g" type="radio" value="male" name="gender"><p>شهادة</p>
+                  <input class="g" type="radio" value="female" name="gender"><p>كورس تدريب</p>
+                  <label class="labb">اضافة</label>
                </div>
-               <div>
+               <div class="box-cv-1">
+                  <input type="datetime-local"  class="formin">
                   <label class="labb">تاريخ البدء</label>
                   <input type="datetime-local"  class="formin">
                   <label class="labb">تاريخ التخرج</label>
-                  <input type="datetime-local"  class="formin">
-               </div>
-               <div class="inputBox">
-                  <textarea required name="" placeholder="وصف التعليم" cols="30" rows="50"></textarea>
                </div>
             </form>
          </div>
       </div>
       <!-- -------------------------------------------------------- -->
       <!--اللغه والهوايات-->
-      <div class="container">
+      <div class="container-cvv">
          <div class="laa">
             <h1>اللغات</h1>
             <form>
-               <div>
-               <label class="labb">اضافة لغة</label>
-               <input type="text" placeholder="اضافة لغه" class="formin">
-               <label class="labb">range</label>
+               <div class="box-cv-1">
                <input type="range" min="0" max="100">
-
+               <label class="labb">range</label>
+               <input type="text" placeholder="اضافة لغه" class="formin">
+               <label class="labb">اضافة لغة</label>
                </div>
             </form>
          </div>
       </div>
             <!-- -------------------------------------------------------- -->
       <!-- المهارات-->
-      <div class="container">
+      <div class="container-cvv">
          <div class="laa">
             <h1>المهارات</h1>
             <form>
-               <div>
-               <label class="labb">اضافة مهارة</label>
-               <input type="text" placeholder="اضافة مهارة" class="formin">
-               <label class="labb">range</label>
+               <div class="box-cv-1">
                <input type="range" min="0" max="100">
+               <label class="labb">range</label>
+               <input type="text" placeholder="اضافة مهارة" class="formin">
+               <label class="labb">اضافة مهارة</label>
                </div>
             </form>
          </div>
       </div>
             <!-- -------------------------------------------------------- -->
       <!-- الهوايات-->
-      <div class="container">
+      <div class="container-cvv">
          <div class="laa">
             <h1>الهوايات</h1>
             <form>
-               <div>
-               <label class="labb">اضافة هواية</label>
-               <input type="text" placeholder="اضافة هواية" class="formin">
-               <label class="labb">range</label>
+               <div class="box-cv-1">
                <input type="range" min="0" max="100">
+               <label class="labb">range</label>
+               <input type="text" placeholder="اضافة هواية" class="formin">
+               <label class="labb">اضافة هواية</label>
                </div>
             </form>
          </div>
       </div>
-
-      <!-- ------------------------------------------------------- -->
       <!-- زر -->
       <div class="button">
-         <input type="submit" class="btn" value="ادخــال" style="padding: 10px 70px;">
+         <input type="submit" class="btn" value="ادخــال">
          <input type="submit" class="btn" value="مسح البيانات">
       </div>
-
-      <!-- ---------------------------------------------------- -->
-      <!-- section -->
-      <section class="se">
-         <h1>انشئ السيرة الذاتية اللازمة للتقدم على الوظائف المناسبة لك</h1>
-         <br>
-         <input type="submit" class="btn" value="ارفاق السيرة الذاتية ؟">
-      </section>
-      <!-- ------------------------------------------------------- -->
 
       <!-- footer section starts  -->
       <div class="footer">
@@ -276,9 +261,11 @@
                <a href=""><img src="images/انستجرام.png" width="50px" height="50px"></a>
                <a href=""><img src="images/واتس.png" width="50px" height="50px"></a>
                <a href=""><img src="images/يوتيوب.png" width="50px" height="50px"></a>
-               <a href=""><img src="images/تويتر.png" width="50px" height="50px"></a>
                <br>
-               <img src="images/الشعار تحت.png" style="margin-top: 30px;" width="250px" height="70px" >
+               <a href="#"><img src="images/الشعار تحت.png" style="margin-top: 30px;" width="250px" height="70px"></a>
+            </div>
+            <div class="icon-up">
+               <a id="foo" href=""><i class="fa-regular fa-circle-up" style="color: #ffffff;"></i></a>
             </div>
          </div>
       </div>

@@ -6,9 +6,9 @@
       <title>About </title>
       <link rel="shortcut icon" type="image/x-icon" href="images/توثيق.png">
       <!-- custom css file link  -->
-      <link rel="stylesheet" href="style.css">
-      <!-- responsive css file link  -->
-      <link rel="stylesheet" href="responsive.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/all.min.css">
       <!-- font awesome cdn link  -->
       <link rel="stylesheet" href="fontawesome-web/css/all.min.css">
    </head>
@@ -16,21 +16,42 @@
       <!-- header section starts  -->
       <header>
          <div class="sign">
-            <a  href="sign in.html" class="btn">تسجيل دخول</a>
-            <a  href="sign up.html" class="btn">سجـل</a>
+          <a  href="sign up.html" class="btn">سجـل</a>
+          <a  href="sign in.html" class="btn">تسجيل دخول</a>
          </div>
           <nav class="navbar">
                 <a href="index.html">الرئيسية</a>
                 <a href="search.html">البحث عن وظيفة</a>
                 <a href="cv.html">السيرة الذاتية</a>
                 <a href="About.html">نبذة عنـا</a>
-                <a href="contact.html">الاتصال بنا والمساعدة</a>
           </nav>
-          <a href="#" class="logo"><img src="images/الشعار.png" width="220px" height="70px"></a>
-          <input type="checkbox" id="menu-bar">
-          <label for="menu-bar" class="fas fa-bars"></label>
-         </header>
-      
+          <a href="index.html" class="logo"><img src="images/الشعار.png" width="220px" height="70px"></a>
+          <div class="links">
+            <span class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <ul>
+              <li><a href="index.html">الرئيسية</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="search.html">البحث عن وظيفة</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="cv.html">السيرة الذاتية</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="About.html">نبذة عنـا</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+              <li><a href="contact.html">الاتصال بنا والمساعدة</a>
+               <i class="fa-solid fa-angles-left"></i></li>
+               <li class="sign-login">
+                  <a  href="sign in.html" class="btn-men">تسجيل دخول</a>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a  href="sign up.html" class="btn-men">سجـل</a>
+                  <i class="fa-solid fa-angles-left"></i>
+               </li>
+            </ul>
+         </div>
+      </header>
       <!-- ------------------------------------------ -->
       <!-- header section ends -->
       <div class="h1">
@@ -52,9 +73,6 @@
                <p>
                   يستهدف موقعنا الخريجيين والطلبة الجدد المقبليين على الوظيفه بدون اى خبره وايضا يستهدف ذو الهمم العالية والخبره العالية فى البحث عن الوظيفه
                </p>
-               <div class="buttons">
-                  <a href="search.html" class="btn">ابحث عن الوظيفة</a>
-               </div>
             </div>
          </div>
       </section>
@@ -104,9 +122,11 @@
                <a href=""><img src="images/انستجرام.png" width="50px" height="50px"></a>
                <a href=""><img src="images/واتس.png" width="50px" height="50px"></a>
                <a href=""><img src="images/يوتيوب.png" width="50px" height="50px"></a>
-               <a href=""><img src="images/تويتر.png" width="50px" height="50px"></a>
                <br>
-               <img src="images/الشعار تحت.png" style="margin-top: 30px;" width="250px" height="70px" >
+               <a href="#"><img src="images/الشعار تحت.png" style="margin-top: 30px;" width="250px" height="70px"></a>
+            </div>
+            <div class="icon-up">
+               <a id="foo" href=""><i class="fa-regular fa-circle-up" style="color: #ffffff;"></i></a>
             </div>
          </div>
       </div>
