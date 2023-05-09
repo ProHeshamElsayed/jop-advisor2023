@@ -23,7 +23,7 @@
                 <a href="search.html">البحث عن وظيفة</a>
                 <a href="cv.html">السيرة الذاتية</a>
                 <a href="About.html">نبذة عنـا</a>
-                <a href="#foo">الاتصال بنا والمساعدة</a>
+                <a href="contact.html">الاتصال بنا والمساعدة</a>
           </nav>
           <a href="index.html" class="logo"><img src="images/الشعار.png" width="220px" height="70px"></a>
           <div class="links">
@@ -66,6 +66,18 @@
             <div class="hh">
                <h1>ابحث عن الوظيفة كمستقل</h1>
             </div>
+            <form>
+               <select class="select" >
+                  <optgroup label="اختر البلد">
+                    <option>مصر</option>
+                    <option>السعودية</option>
+                    <option>الامارات</option>
+                    <option>عمان</option>
+                  </optgroup>     
+                </select>
+               <input type="text" placeholder="ابحث عن الوظيفه">
+               <a href="search.html" class="btnn">إبحث</a>
+            </form>
       </div>
       <a href="search.html" class="go-down">
          <i class="fa-solid fa-angles-down"></i>
@@ -131,39 +143,9 @@
             </div>
          </div>
       </section>
-      
-      <!-- section contact -->
-      <section class="contact">
-         <div class="image">
-            <img src="images/contact-img.png">
-         </div>
-         <form>
-            <div class="heading">الاتصال بــنا</h1>
-            <div class="inputBox">
-               <input type="text" placeholder="الإســم">
-            </div>
-            <div class="inputBox">
-               <input type="email" placeholder="البريد الإلكترونى">
-            </div>
-            <div class="inputBox">
-               <input type="text" placeholder="رقم الهاتف">
-            </div>
-            <div class="inputBox">
-               <textarea required name="" placeholder="رسالة" cols="30" rows="50"></textarea>
-            </div>
-            <input type="submit" class="btn" value="ارسل سالة">
-         </form>
-      </section>
-      <div>
-         <iframe class="map"
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3414.0920196581146!2d31.7393805848581!3d31.16272158148934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f9db5379cbd447%3A0x35c1fc33d5cd309b!2z2YfYtNin2YUg2KfZhNiz2YrYrw!5e0!3m2!1sar!2seg!4v1616340844449!5m2!1sar!2seg"
-         width="70%" height="400px" style="margin-left:15%; box-shadow: 1px 2px 10px black; margin-bottom: 50px;">
-         </iframe>
-      </div>
-
       <!-- ------------------------------------------------------- -->
       <!-- footer section starts  -->
-      <div id="#foo"  class="footer">
+      <div class="footer">
          <div class="box-container">
             <div class="box">
                <h3>خـدمـة العمـلاء</h3>
@@ -182,17 +164,23 @@
             </div>
             <div class="box">
                <h3>تابعنـا مـن هنـا</h3>
-               <a href=""><img src="images/facebook.png" width="50px" height="50px"></a>
-               <a href=""><img src="images/لينكد ان.png" width="50px" height="50px"></a>
-               <a href=""><img src="images/انستجرام.png" width="50px" height="50px"></a>
-               <a href=""><img src="images/واتس.png" width="50px" height="50px"></a>
-               <a href=""><img src="images/يوتيوب.png" width="50px" height="50px"></a>
+               <a href="https://www.facebook.com/Eng.HeshamElsayed" target="_blank"><img src="images/facebook.png" width="50px" height="50px"></a>
+               <a href="https://www.linkedin.com/in/hesham-elsayed-3297b4218/" target="_blank"><img src="images/لينكد ان.png" width="50px" height="50px"></a>
+               <a href="https://www.instagram.com/pro.heshamelsayed/" target="_blank"><img src="images/انستجرام.png" width="50px" height="50px"></a>
+               <a href="https://web.whatsapp.com/" target="_blank"><img src="images/واتس.png" width="50px" height="50px"></a>
+               <a href="https://www.behance.net/Engheshamelsayed" target="_blank"><img src="images/Behance.png" width="50px" height="50px"></a>
                <br>
-               <a href="#"><img src="images/الشعار تحت.png" style="margin-top: 30px;" width="250px" height="70px"></a>
+               <img src="images/الشعار تحت.png" style="margin-top: 30px;" width="250px" height="70px">
             </div>
             <div class="icon-up">
-               <a id="foo" href=""><i class="fa-regular fa-circle-up" style="color: #ffffff;"></i></a>
+               <a href=""><i class="fa-regular fa-circle-up" style="color: #ffffff;"></i></a>
+               <br>
             </div>
+            <div>
+            <div class="qr">
+            <img  src="images/qrcode.png">
+            <p>من فضلك امسح الباركود</p>
+           </div> 
          </div>
       </div>
    </body>
